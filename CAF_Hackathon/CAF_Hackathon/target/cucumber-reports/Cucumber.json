@@ -1,0 +1,368 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-19T10:39:52.978Z",
+        "line": 3,
+        "name": "Bitfinex API with single ticker name",
+        "description": "",
+        "id": "bitfinex-apis-to-get-different-data-based-on-ticker--names.;bitfinex-api-with-single-ticker-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 457000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Set the baseURI  and  Set the  ticker name",
+            "match": {
+              "location": "com.api.bitfinex.tests.BitfinexTests.setTheBaseURI(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "BaseURI",
+                  "tickerName"
+                ]
+              },
+              {
+                "cells": [
+                  "https://api-pub.bitfinex.com",
+                  "tBTCUSD"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1938000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Set the HTTP Method get and end point",
+            "match": {
+              "location": "com.api.bitfinex.tests.BitfinexTests.setTheHTTPMethodGetAndEndPoint(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Endpoint"
+                ]
+              },
+              {
+                "cells": [
+                  "/v2/ticker2"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Check the status code  for single ticker name",
+            "match": {
+              "location": "com.api.bitfinex.tests.BitfinexTests.checkTheStatusCodeForSingleTickerName(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ExpectedStatusCode"
+                ]
+              },
+              {
+                "cells": [
+                  "200"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Check the ticker name in response",
+            "match": {
+              "location": "com.api.bitfinex.tests.BitfinexTests.checkTheTickerNameInResponse(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ExpectedTickerName"
+                ]
+              },
+              {
+                "cells": [
+                  "tBTCUSD"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-19T10:39:55.449Z",
+        "line": 17,
+        "name": "Bitfinex API with multiple ticker names",
+        "description": "",
+        "id": "bitfinex-apis-to-get-different-data-based-on-ticker--names.;bitfinex-api-with-multiple-ticker-names",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1135000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Set the  multiple ticker names",
+            "match": {
+              "location": "com.api.bitfinex.tests.BitfinexTests.setTheMultipleTickerName(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Ticker Name"
+                ]
+              },
+              {
+                "cells": [
+                  "tBTCUSD,tLTCBTC,tETHUSD"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Set the HTTP Method get and  end point for multiple ticker names",
+            "match": {
+              "location": "com.api.bitfinex.tests.BitfinexTests.setTheHTTPMethodGetEndPoint(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Endpoint"
+                ]
+              },
+              {
+                "cells": [
+                  "/v2/ticker2"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Check the status code  for multiple ticker names",
+            "match": {
+              "location": "com.api.bitfinex.tests.BitfinexTests.checkTheStatusCode(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ExpectedStatusCode"
+                ]
+              },
+              {
+                "cells": [
+                  "200"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Validate all  the ticker names in response",
+            "match": {
+              "location": "com.api.bitfinex.tests.BitfinexTests.checkTheEmptyResponse(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Ticker Name"
+                ]
+              },
+              {
+                "cells": [
+                  "\"tBTCUSD,tLTCBTC,tETHUSD\""
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-19T10:39:56.592Z",
+        "line": 40,
+        "name": "Bitfinex API with invalid  ticker names",
+        "description": "",
+        "id": "bitfinex-apis-to-get-different-data-based-on-ticker--names.;bitfinex-api-with-invalid--ticker-names;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 820000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Set the invalid ticker name \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.bitfinex.tests.BitfinexTests.setTheRequestArgument(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-19T10:39:57.418Z",
+        "line": 41,
+        "name": "Bitfinex API with invalid  ticker names",
+        "description": "",
+        "id": "bitfinex-apis-to-get-different-data-based-on-ticker--names.;bitfinex-api-with-invalid--ticker-names;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1163000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Set the invalid ticker name \"@#$!%^\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"@#$!%^\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.bitfinex.tests.BitfinexTests.setTheRequestArgument(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-19T10:39:58.588Z",
+        "line": 42,
+        "name": "Bitfinex API with invalid  ticker names",
+        "description": "",
+        "id": "bitfinex-apis-to-get-different-data-based-on-ticker--names.;bitfinex-api-with-invalid--ticker-names;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 683000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Set the invalid ticker name \"null\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"null\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.bitfinex.tests.BitfinexTests.setTheRequestArgument(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-19T10:39:59.281Z",
+        "line": 43,
+        "name": "Bitfinex API with invalid  ticker names",
+        "description": "",
+        "id": "bitfinex-apis-to-get-different-data-based-on-ticker--names.;bitfinex-api-with-invalid--ticker-names;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 744000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Set the invalid ticker name \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.api.bitfinex.tests.BitfinexTests.setTheRequestArgument(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-19T10:40:00.032Z",
+        "line": 45,
+        "name": "Bitfinex API with invalid endpoint",
+        "description": "",
+        "id": "bitfinex-apis-to-get-different-data-based-on-ticker--names.;bitfinex-api-with-invalid-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1023000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Set the  request argument",
+            "match": {
+              "location": "com.api.bitfinex.tests.BitfinexTests.setTheRequestArgument()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Bitfinex APIS to get different data based on ticker  names.",
+    "description": "",
+    "id": "bitfinex-apis-to-get-different-data-based-on-ticker--names.",
+    "keyword": "Feature",
+    "uri": "file:Features/BitfinexAPI.feature",
+    "tags": []
+  }
+]

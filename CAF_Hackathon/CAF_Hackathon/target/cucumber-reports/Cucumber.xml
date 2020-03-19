@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="8.298">
+<testcase classname="Bitfinex APIS to get different data based on ticker  names." name="Bitfinex API with single ticker name" time="2.462">
+<system-out><![CDATA[Given Set the baseURI  and  Set the  ticker name............................passed
+When Set the HTTP Method get and end point..................................passed
+Then Check the status code  for single ticker name..........................passed
+And Check the ticker name in response.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Bitfinex APIS to get different data based on ticker  names." name="Bitfinex API with multiple ticker names" time="1.141">
+<system-out><![CDATA[Given Set the  multiple ticker names........................................passed
+When Set the HTTP Method get and  end point for multiple ticker names.......passed
+Then Check the status code  for multiple ticker names.......................passed
+And Validate all  the ticker names in response..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Bitfinex APIS to get different data based on ticker  names." name="Bitfinex API with invalid  ticker names" time="0.824">
+<system-out><![CDATA[Given Set the invalid ticker name "1234"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Bitfinex APIS to get different data based on ticker  names." name="Bitfinex API with invalid  ticker names 2" time="1.166">
+<system-out><![CDATA[Given Set the invalid ticker name "@#$!%^"..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Bitfinex APIS to get different data based on ticker  names." name="Bitfinex API with invalid  ticker names 3" time="0.688">
+<system-out><![CDATA[Given Set the invalid ticker name "null"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Bitfinex APIS to get different data based on ticker  names." name="Bitfinex API with invalid  ticker names 4" time="0.748">
+<system-out><![CDATA[Given Set the invalid ticker name ""........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Bitfinex APIS to get different data based on ticker  names." name="Bitfinex API with invalid endpoint" time="1.024">
+<system-out><![CDATA[Given Set the  request argument.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
